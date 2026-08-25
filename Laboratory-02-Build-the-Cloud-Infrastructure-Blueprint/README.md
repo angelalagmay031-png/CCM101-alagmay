@@ -1,5 +1,5 @@
 
-# ☁️ Cloud Infrastructure Mission
+# Cloud Infrastructure Mission
 
 ## 1. Mission Overview
 

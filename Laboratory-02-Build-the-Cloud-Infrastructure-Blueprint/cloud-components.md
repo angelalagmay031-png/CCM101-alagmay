@@ -1,19 +1,18 @@
-
 # Cloud Infrastructure Components
 
 ## 1. Compute Resources
 
 ### Purpose
 
-Compute resources provide the processing power required to run applications, services, commands, and workloads. They include CPU and memory resources that allow software to execute efficiently.
+Compute resources are responsible for carrying out the instructions given by users and applications. The processor and memory work together to execute commands, run programs, and handle active processes.
 
 ### Importance in Cloud Computing
 
-Compute resources are important because cloud applications need processing power to perform different tasks. Cloud platforms allow organizations to increase or decrease compute resources depending on their workload requirements.
+Computing power is one of the main requirements of a cloud environment because applications and services need resources to operate. Cloud systems can allocate more or fewer resources depending on the amount of work being performed.
 
 ### KillerCoda Linux Environment
 
-The KillerCoda environment provides a Linux server with CPU and memory resources. The CPU processes commands and applications, while the available RAM supports running processes and services. The `lscpu` and `free -h` commands were used to investigate the CPU and memory resources of the environment.
+In KillerCoda, the Linux server is provided with virtual processing and memory resources. These resources are used whenever commands are executed or programs are running. The `lscpu` command was used to view CPU information, while `free -h` was used to check the available memory.
 
 ---
 
@@ -21,15 +20,15 @@ The KillerCoda environment provides a Linux server with CPU and memory resources
 
 ### Purpose
 
-Storage resources are used to store operating system files, applications, configurations, user files, and other data.
+Storage resources provide a location where system files, programs, configurations, and personal or laboratory data can be saved.
 
 ### Importance in Cloud Computing
 
-Storage is important because cloud applications need reliable and scalable places to store data. Cloud providers offer different storage services depending on capacity, performance, and availability requirements.
+Cloud storage allows information to be retained and accessed when needed. It is important for applications because data must have a dependable storage location. Cloud environments can also provide different storage capacities based on the requirements of a workload.
 
 ### KillerCoda Linux Environment
 
-The KillerCoda Linux environment provides disk storage that contains the Ubuntu operating system, installed software, configuration files, and user data. The `df -h` command was used to investigate the available disk capacity and mounted file systems.
+The KillerCoda server has disk space used by Ubuntu, system files, installed packages, and files created during the laboratory activities. The `df -h` command was used to check the disk usage and available storage in the Linux environment.
 
 ---
 
@@ -37,15 +36,15 @@ The KillerCoda Linux environment provides disk storage that contains the Ubuntu 
 
 ### Purpose
 
-Networking resources allow computers, servers, applications, and users to communicate with each other. They provide the connectivity needed to send and receive data.
+Networking resources provide the connection needed for devices and systems to exchange information. Network interfaces and IP addresses help establish communication between the Linux server and other systems.
 
 ### Importance in Cloud Computing
 
-Networking is essential in cloud computing because cloud resources need to communicate with users and other services. IP addresses, network interfaces, routing, and network connections allow cloud applications and services to exchange data.
+Networking makes it possible for users to access cloud resources remotely. It also allows different cloud services, servers, and applications to communicate and transfer information.
 
 ### KillerCoda Linux Environment
 
-The KillerCoda Linux server has network interfaces and network connectivity that allow the server to communicate with other systems. The `ip addr` and `hostname -I` commands can be used to investigate the networking configuration and IP address of the Linux environment.
+The KillerCoda server uses a virtual network connection to communicate with external systems and cloud services. Network interfaces and IP address information can be examined using the `ip addr` command. The `hostname -I` command can also be used to display the server's IP address.
 
 ---
 
@@ -53,18 +52,18 @@ The KillerCoda Linux server has network interfaces and network connectivity that
 
 ### Purpose
 
-The operating system manages the computer's hardware and software resources. It provides an environment where applications, commands, and services can run.
+The operating system serves as the main software layer that controls system resources and provides users with tools for managing files, processes, applications, and hardware-related resources.
 
 ### Importance in Cloud Computing
 
-An operating system is important because cloud servers require software that manages compute, memory, storage, networking, users, files, and running processes.
+Cloud servers depend on an operating system to manage the resources assigned to them. It provides the environment needed for applications and services to operate while also handling users, processes, storage, and network connections.
 
 ### KillerCoda Linux Environment
 
-The KillerCoda environment uses **Ubuntu 24.04 LTS**, a Linux-based operating system. Linux provides the command-line tools and system utilities needed to investigate and manage the cloud server environment. The `lsb_release -a` command was used to identify the Linux distribution and version.
+The operating system used in the KillerCoda environment is **Ubuntu 24.04 LTS**. It provides a command-line environment where Linux commands can be executed to inspect and manage the server. The `lsb_release -a` command was used to identify the Ubuntu version, while `uname -r` was used to check the Linux kernel version.
 
 ---
 
 ## Relationship Between the Components
 
-Compute, storage, networking, and the operating system work together as a complete cloud infrastructure. The operating system manages the compute resources, accesses storage resources, and controls networking resources. Together, these components provide the foundation required to run applications, services, and workloads in a cloud computing environment.
+These infrastructure components depend on one another to create a functional cloud environment. The operating system coordinates the available CPU and memory, manages access to storage, and handles network communication. Compute resources execute workloads, storage keeps the required data, and networking connects the environment to other systems. Together, they form the basic infrastructure needed for running applications and services in the KillerCoda Linux environment.

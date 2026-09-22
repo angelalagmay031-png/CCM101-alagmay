@@ -1,122 +1,123 @@
-
 # Laboratory 04 — The Cloud-Native Engineer
 
 ## Mission Overview
 
-This laboratory introduced the basic concepts and workflow of cloud-native application deployment using Docker. The mission focused on understanding how containers differ from traditional Virtual Machines and applying those concepts through a practical Nginx deployment.
+This laboratory introduced the fundamental concepts of cloud-native engineering and containerization. The activity focused on understanding the differences between traditional Virtual Machines and containers and applying these concepts through a practical Docker deployment.
 
-Using the KillerCoda Docker environment, I verified the Docker installation, downloaded an Nginx image, launched a container, exposed its web service through port mapping, tested the application locally, and managed the container through its lifecycle.
-
-The activity demonstrates how a cloud-native approach can focus on managing application services rather than manually preparing an entire operating system for every workload.
-
----
+Using the KillerCoda environment, I verified the Docker installation, downloaded the official Nginx image, deployed a containerized web server, configured port mapping, tested the application, and managed the container through its lifecycle.
 
 ## Objectives
 
-At the completion of this laboratory, I was able to:
+The objectives of this laboratory were to:
 
-* Explain the main differences between Virtual Machines and containers.
-* Verify Docker availability in a Linux-based cloud environment.
-* Pull an application image from Docker Hub.
-* Create and run a container using the Docker CLI.
-* Map a host network port to a container port.
-* Test a containerized web server using `curl`.
-* Stop, inspect, and remove a Docker container.
+* Differentiate Virtual Machines from containers.
+* Verify Docker availability in a Linux-based environment.
+* Pull and use a Docker image from Docker Hub.
+* Deploy an Nginx web server inside a container.
+* Configure host-to-container port mapping.
+* Test a containerized web application.
+* Manage the basic lifecycle of a Docker container.
 * Document technical procedures using Markdown.
-* Organize deployment evidence inside a GitHub portfolio.
-
----
+* Maintain screenshots as evidence of completed tasks.
 
 ## Docker Commands Executed
 
-### Checkpoint 3 — Docker Verification
+### Docker Environment Verification
 
 ```bash
 docker --version
-```
-
-```bash
 docker info
-```
-
-```bash
 docker version
 ```
 
-### Checkpoint 4 — Nginx Deployment
+### Nginx Deployment
 
 ```bash
 docker pull nginx:latest
-```
-
-```bash
 docker run -d --name cloudnova-nginx -p 8080:80 nginx:latest
-```
-
-```bash
 curl http://localhost:8080
-```
-
-```bash
 docker ps
 ```
 
-### Checkpoint 5 — Container Lifecycle
+### Container Lifecycle Management
 
 ```bash
 docker ps
-```
-
-```bash
 docker stop cloudnova-nginx
-```
-
-```bash
 docker ps -a
-```
-
-```bash
 docker rm cloudnova-nginx
-```
-
-```bash
 docker ps -a
 ```
-
----
 
 ## Skills Learned
 
-This laboratory helped me develop practical skills in container-based application deployment. I learned how Docker images are used as templates for creating containers and how the Docker CLI can control those containers from a Linux terminal.
+Through this laboratory, I developed practical experience in Docker and container-based application deployment. I learned how Docker images are used to create containers and how containers can provide a lightweight environment for running applications.
 
-I also practiced basic container networking through port mapping. The Nginx deployment showed how an application can become accessible from the host without manually installing the web server directly into the operating system.
+I also learned how port mapping allows a service inside a container to be accessed through a port on the host system. The container lifecycle exercises provided experience in identifying running containers, stopping them, verifying their state, and removing them when they were no longer needed.
 
-Another important skill was documenting technical work in a reproducible format. Recording the commands, explanations, and screenshots in Markdown makes the deployment process easier for another administrator or developer to understand and repeat.
-
----
+The activity also strengthened my ability to document technical procedures using Markdown and maintain supporting evidence within a GitHub repository.
 
 ## Challenges Encountered
 
-One challenge during the activity was understanding the difference between an image and a container. The Nginx image acts as the packaged source used to create a container, while the container represents the running instance of that image.
+One of the main challenges was understanding the relationship between a Docker image and a container. The Nginx image served as the template from which the `cloudnova-nginx` container was created.
 
-Another challenge was understanding port mapping. The web server listens on port 80 inside the container, but I accessed it through port 8080 on the Docker host. The `-p 8080:80` option connected these two ports.
+Another challenge was understanding port mapping. Nginx uses port 80 inside the container, while port 8080 was exposed on the host. The `-p 8080:80` option connected these two ports and allowed the web server to be accessed through `localhost:8080`.
 
-The container lifecycle also reinforced the difference between stopping and removing a container. A stopped container still exists and can be listed with `docker ps -a`, while `docker rm` removes that container from the Docker environment.
-
----
+Managing the container lifecycle also helped clarify the difference between stopping and removing a container. A stopped container still exists and can be viewed using `docker ps -a`, while `docker rm` removes the container itself.
 
 ## Evidence
 
-Screenshots for this laboratory are located in the `screenshots` directory.
+The following screenshots provide evidence of the Docker operations completed during this laboratory.
 
-| Screenshot                | Evidence                                         |
-| ------------------------- | ------------------------------------------------ |
-| `docker-version.png`      | Docker installation and environment verification |
-| `nginx-running.png`       | Successful Nginx HTTP response                   |
-| `container-lifecycle.png` | Container stop, verification, and removal        |
+### 1. Docker Environment Verification
+
+This screenshot shows the verification of the Docker installation and the status of the Docker environment using `docker --version`, `docker info`, and related commands.
+
+![Docker Environment Verification](./screenshots/docker-version.png)
+
+**File:** `screenshots/docker-version.png`
 
 ---
 
-## Portfolio Progress
+### 2. Nginx Container Deployment
 
-Laboratory 04 expands my cloud computing portfolio from cloud fundamentals and infrastructure planning into practical cloud-native operations. The activity demonstrates a transition from understanding cloud concepts to interacting directly with a container runtime and deploying an actual service.
+This screenshot shows the successful HTTP response from the Nginx web server after deploying the container and mapping host port 8080 to container port 80.
+
+![Nginx Container Running](./screenshots/nginx-running.png)
+
+**File:** `screenshots/nginx-running.png`
+
+---
+
+### 3. Container Lifecycle Management
+
+This screenshot documents the container lifecycle operations, including listing the container, stopping it, verifying its stopped state, removing it, and confirming its removal.
+
+![Container Lifecycle](./screenshots/container-lifecycle.png)
+
+**File:** `screenshots/container-lifecycle.png`
+
+## Repository Structure
+
+```text
+Laboratory-04-Cloud-Native-Engineer/
+│
+├── README.md
+├── virtualization-vs-containers.md
+├── docker-deployment.md
+├── reflection.md
+│
+└── screenshots/
+    ├── docker-version.png
+    ├── nginx-running.png
+    └── container-lifecycle.png
+```
+
+## Laboratory Status
+
+**Laboratory:** 04 — The Cloud-Native Engineer
+**Status:** Completed
+**Environment:** KillerCoda Docker Playground
+**Containerized Application:** Nginx
+**Host Port:** 8080
+**Container Port:** 80

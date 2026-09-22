@@ -1,12 +1,21 @@
-
 # Mission 4 Reflection
 
-This laboratory gave me a more practical understanding of why containers are widely used in cloud-native environments. One of the biggest differences I noticed between a Docker container and a Virtual Machine is the setup process. A VM normally needs a complete operating system to be created and started before the application can run. A Docker container, on the other hand, can start directly from an existing image without requiring another full operating system. In this activity, the Nginx service could be deployed with only a few commands, which made the process much more lightweight and repeatable.
+## 1. How does the boot time and setup process of a Docker container compare to installing an operating system on a Virtual Machine?
 
-The `-p 8080:80` option was also important because the Nginx service was listening on port 80 inside the container. The host computer was not automatically using that internal container port. Port mapping connected host port 8080 to container port 80, allowing me to access the web server through `http://localhost:8080`. Without this mapping, the service would not be directly accessible through that host port.
+A Docker container can be started much faster than a Virtual Machine because it does not need to boot a complete guest operating system. In this laboratory, the Nginx application was deployed using a Docker image and a single `docker run` command. A VM generally requires the operating system to be installed, configured, and booted before the application can be installed and used. This makes containers convenient for applications that need to be deployed quickly and consistently.
 
-I also learned that `docker rm` removes the container itself. Any data stored only inside the container's writable layer should not be treated as permanent storage. This showed me why persistent application data should normally be placed in appropriate Docker volumes or external storage instead of relying on the container's temporary filesystem.
+## 2. Why is port mapping (`-p 8080:80`) necessary when running a web server inside a container?
 
-Containerization can also change how developers and IT operations teams collaborate. Developers can package an application and its dependencies into a consistent image, while operations teams can deploy and manage that same image across environments. This supports a more consistent DevOps workflow because deployment becomes more standardized and reproducible.
+Port mapping connects a port on the Docker host to a port inside the container. In this activity, Nginx listens on port 80 inside the container, while I accessed the service through port 8080 on the host. The `-p 8080:80` option allows requests sent to `localhost:8080` to reach the Nginx service on port 80 inside the container. Without the mapping, the Nginx service would not be directly accessible through the host's port 8080.
 
-Finally, my GitHub portfolio is evolving from a collection of individual laboratory activities into a record of practical cloud skills. This laboratory added Docker, container lifecycle management, networking, and technical documentation to the concepts I have already studied.
+## 3. What happens to the data inside a container when you use the `docker rm` command?
+
+The `docker rm` command removes the specified container from the Docker environment. Data stored only in the container's writable layer is removed along with the container and should not be considered permanent storage. This is why applications that need persistent data should use Docker volumes or another external storage solution. In this activity, removing `cloudnova-nginx` deleted the container after it had been stopped.
+
+## 4. How do you think containerization changes the way software developers and IT operations teams work together (DevOps)?
+
+Containerization can make collaboration between developers and IT operations teams more consistent because an application and its dependencies can be packaged into the same container image. Developers can test the application in an environment that can closely match the deployment environment. Operations teams can then use the same image when deploying the application. This reduces differences between development and deployment environments and supports a more standardized DevOps workflow.
+
+## 5. How is your GitHub portfolio evolving?
+
+My GitHub portfolio is gradually becoming a record of the practical cloud computing skills I have developed throughout the laboratory activities. In this laboratory, I added containerization, Docker commands, application deployment, port mapping, container lifecycle management, and technical documentation to my previous cloud computing work. I also learned the importance of keeping screenshots and Markdown documentation organized so that my work can be reviewed and reproduced. As I complete more laboratories, the repository can serve as evidence of my progress from basic cloud concepts toward more practical cloud-native technologies.

@@ -1,1 +1,11 @@
+# Mission Reflection
 
+This laboratory activity helped me understand the importance of object storage and how it can be used to manage large amounts of data. Object storage is better suited for storing millions of photos compared to a traditional block storage hard drive because it is designed to handle large amounts of unstructured data. Each photo is stored as an object with its own unique identifier and metadata, making files easier to organize and retrieve. Object storage can also scale as the number of uploaded images increases without requiring major changes to the storage system.
+
+Using Docker made deploying the MinIO storage server easier and faster. Instead of manually installing and configuring every component, I used a Docker command to run MinIO inside a container. I also learned how to map ports 9000 and 9001 to access the storage API and web console. Although I encountered problems downloading the original MinIO image, I was able to troubleshoot the issue and successfully run the server using an alternative image.
+
+In cloud storage, a bucket is a container used to organize and store objects, such as photos, documents, and other files. In this activity, I created a bucket named `client-photos` and uploaded a file to test the storage system. This helped me understand how objects are managed through the MinIO web console.
+
+Large enterprise companies protect their object storage data by maintaining multiple copies across different disks, servers, or geographical locations. They may use replication, erasure coding, regular integrity checks, and automated recovery systems to reduce the risk of data loss when hardware fails. Backups and disaster recovery plans also help restore data after serious failures.
+
+Finally, this activity improved my confidence in using the Linux command line. I practiced running Docker commands, checking container status, inspecting logs, and troubleshooting deployment errors. I learned that technical problems are part of the learning process and that reading error messages carefully helps me find solutions. Overall, this laboratory strengthened my understanding of cloud storage, containerization, and basic Linux system administration.

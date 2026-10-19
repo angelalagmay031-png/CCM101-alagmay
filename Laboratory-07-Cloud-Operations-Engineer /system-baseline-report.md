@@ -14,4 +14,7 @@ Checking disk space is important before a massive traffic surge because the serv
 
 Screenshot Evidence — Memory Check
 
+![Memory Check Screenshot](screenshots/memory-check.png)
+![Disk Check Screenshot](screenshots/disk-check.png)
+
 

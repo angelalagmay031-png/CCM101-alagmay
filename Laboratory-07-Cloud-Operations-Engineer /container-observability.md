@@ -4,7 +4,7 @@
 
 **404 Error Log:**
 
-`"GET /hidden-admin-page HTTP/1.1" 404`
+`[I-paste dito ang eksaktong 404 error line mula sa docker logs]`
 
 ## 2. Importance of Application Logs
 
@@ -14,4 +14,4 @@ Application logs are important because they help us identify errors and understa
 
 ### Docker Logs Screenshot
 
-![Docker Logs Screenshot](https://raw.githubusercontent.com/angelalagmay031-png/CCM101-alagmay/main/Laboratory-07-Cloud-Operations-Engineer/screenshots/docker-logs.png)
+![Docker Logs Screenshot](screenshots/docker-logs.png)

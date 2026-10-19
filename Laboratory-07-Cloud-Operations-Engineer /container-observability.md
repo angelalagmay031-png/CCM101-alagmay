@@ -24,4 +24,4 @@ Application logs are important because they help us identify errors and understa
 
 ### Screenshot Evidence
 
-![Container Metrics Screenshot](screenshots/container-metrics.png)
+![Container Metrics Screenshot](Laboratory-07-Cloud-Operations-Engineer/screenshots/container-metrics.png)

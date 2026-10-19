@@ -12,6 +12,4 @@ Application logs are important because they help us identify errors and understa
 
 ## 3. Screenshot Evidence
 
-### Docker Logs Screenshot
-
-![Docker Logs Screenshot](https://raw.githubusercontent.com/angelalagmay031-png/CCM101-alagmay/main/Laboratory-07-Cloud-Operations-Engineer/screenshots/docker-logs.png)
+![Docker Logs Screenshot](screenshots/docker-logs.png)

@@ -19,9 +19,17 @@ Application logs are important because they help us identify errors and understa
 ## 4. Real-Time Container Metrics
 
 - **Container Name:** clientwebsite
-- **Memory Usage:** [Actual value from docker stats]
-- **CPU Usage:** [Actual value from docker stats]
+- **Memory Usage:** 2.688MiB / 1.859GiB
+- **CPU Usage:** 0.00%
 
 ### Screenshot Evidence
 
-![Container Metrics Screenshot](Laboratory-07-Cloud-Operations-Engineer/screenshots/container-metrics.png)
+![Container Metrics Screenshot](screenshots/container-metrics.png)
+
+### Screenshot Evidence
+
+![Container Metrics Screenshot](screenshots/container-metrics.png)
+
+### Screenshot Evidence
+
+![Container Metrics Screenshot](screenshots/container-metrics.png)

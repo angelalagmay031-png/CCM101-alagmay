@@ -12,7 +12,7 @@
 
 Checking disk space is important before a massive traffic surge because the server needs enough storage for logs, temporary files, and application data to prevent errors or service interruptions.
 
-<img src="screenshots/memory-check.png" alt="Memory Check Screenshot">
+
 
 
 

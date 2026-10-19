@@ -10,8 +10,12 @@
 
 ## 3. Importance of Disk Space Monitoring
 
-Checking disk space is important before a massive traffic surge because the server needs enough storage for logs, temporary files, and application data to prevent errors or service interruptions.
+Checking disk space before a massive traffic surge is important because the server needs enough storage for logs, temporary files, and application data to prevent errors and service interruptions.
 
+## 4. Screenshot Evidence
+
+- `screenshots/memory-check.png`
+- `screenshots/disk-check.png`
 
 
 

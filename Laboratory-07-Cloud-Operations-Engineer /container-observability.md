@@ -33,3 +33,19 @@ At the time of monitoring, the `clientwebsite` container was using approximately
 ## Importance of Application Logs
 
 Application logs help administrators track HTTP requests and identify errors that may affect website availability. By reviewing these records, cloud engineers can investigate failed requests, determine possible causes, and resolve application issues more efficiently.
+
+## Real-Time Container Metrics
+
+### Command Used
+
+`docker stats`
+
+| **Metric** | **Observed Value** |
+|---|---|
+| Container Name | `clientwebsite` |
+| Memory Usage | [Enter exact value from screenshot] |
+| Memory Limit | [Enter limit from screenshot] |
+| CPU Utilization | [Enter exact CPU percentage] |
+| Network I/O | [Enter value from screenshot] |
+
+The `docker stats` command provides real-time information about the container's resource consumption. Monitoring CPU usage, memory consumption, and network activity helps determine whether the web server is operating efficiently and whether it may need additional resources.

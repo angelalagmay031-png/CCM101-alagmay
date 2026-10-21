@@ -33,14 +33,10 @@ This laboratory focuses on monitoring a cloud server and managing a web applicat
 
 Through this laboratory, I learned how to assess the basic health of a Linux server and monitor its resource utilization. I gained practical experience deploying a web server using Docker, testing HTTP requests with `curl`, and identifying unsuccessful requests through application logs. I also learned how to use `docker stats` to observe container performance and understand the importance of monitoring CPU, memory, and disk space. These skills helped me understand how cloud operations engineers maintain application availability, troubleshoot issues, and manage server resources efficiently.
 
-## 5. Project Evidence
+## Repository Contents
 
-The following screenshots document the activities performed during the laboratory:
-
-- `screenshots/memory-check.png` — Host memory usage.
-- `screenshots/disk-check.png` — Root filesystem storage capacity.
-- `screenshots/install-nginx.png` — Nginx container deployment.
-- `screenshots/simulation1.png` — Successful HTTP requests.
-- `screenshots/simulation2.png` — 404 Not Found response.
-- `screenshots/docker-logs.png` — Application log records.
-- `screenshots/container-metrics.png` — Real-time Docker container metrics.
+- `README.md` — Laboratory overview, objectives, commands, and skills learned.
+- `system-baseline-report.md` — Host RAM and disk storage information.
+- `container-observability.md` — Application logs and real-time container metrics.
+- `reflection.md` — Reflection on the laboratory experience and lessons learned.
+- `screenshots/` — Evidence of host monitoring, Nginx deployment, HTTP requests, application logs, and container resource usage.

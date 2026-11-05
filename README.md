@@ -13,9 +13,14 @@ This repository contains all my laboratory activities for CCM101 Cloud Computing
 | **Lab Activity 1** | Welcome-to-the-Cloud                     | 🟢 Completed |
 | **Lab Activity 2** | Build-the-Cloud-Infrastructure-Blueprint | 🟢 Completed |
 | **Lab Activity 3** | Multi-Cloud-Explorer                     | 🟢 Completed |
-| **Lab Activity 4** | Laboratory-04-Cloud-Native-Engineer      | 🟢 Completed |
+| **Lab Activity 4** | Cloud-Native-Engineer                    | 🟢 Completed |
+| **Lab Activity 5** | Cloud-Data-Engineer                      | 🟢 Completed |
+| **Lab Activity 6** | Cloud-Deployment-Engineer                | 🟢 Completed |
+| **Lab Activity 7** | Cloud-Operations-Engineer                | 🟢 Completed |
+| **Lab Activity 8** | Cloud-Security-Engineer                  | 🟢 Completed |
+| **Lab Activity 9** | Cloud-Automation-Engineer                | 🟢 Completed |
 
 
 ### Overall Progress
 
-**Progress: 4/5 Laboratory Activities Completed — 80% ✅**
+**Progress: 9/10 Laboratory Activities Completed — 80% ✅**
